@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pages"
+    tools:context=".view.ProfileMovieActivity">
+
+    <ImageView
+        android:id="@+id/image_backdrop_path"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_gravity="top"
+        android:contentDescription="@string/movie_backdrop"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_poster_path"
+        android:layout_width="132dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="24dp"
+        android:contentDescription="@string/movie_poster"
+        android:elevation="2sp"
+        android:paddingHorizontal="1dp"
+        android:paddingVertical="1dp"
+        android:background="#FFC107"
+        android:src="@drawable/bg_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_backdrop_path"
+        tools:ignore="ImageContrastCheck" />
+    <TextView
+        android:id="@+id/text_original_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:textColor="@color/white"
+        android:background="#A8000000"
+        android:textSize="21sp"
+        android:text="@string/titulo_do_filme"
+        android:paddingRight="12dp"
+        android:paddingLeft="180dp"
+        android:paddingVertical="6dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintRight_toRightOf="@+id/image_backdrop_path"
+        app:layout_constraintBottom_toBottomOf="@+id/image_backdrop_path" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFC107"
+        app:layout_constraintRight_toRightOf="@+id/image_backdrop_path"
+        app:layout_constraintBottom_toBottomOf="@+id/image_backdrop_path" />
+
+    <TextView
+        android:id="@+id/text_vote_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/note_9_0"
+        android:textAlignment="textEnd"
+        android:paddingHorizontal="12dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFC107"
+        app:layout_constraintRight_toRightOf="@id/image_backdrop_path"
+        app:layout_constraintTop_toBottomOf="@id/image_backdrop_path" />
+
+
+    <TextView
+        android:id="@+id/text_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_de_lancamento"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="12dp"
+        android:textAlignment="textEnd"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#DCDCDC"
+        app:layout_constraintRight_toRightOf="@id/text_vote_average"
+        app:layout_constraintTop_toBottomOf="@id/text_vote_average" />
+
+    <TextView
+        android:id="@+id/text_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/genre"
+        android:textAlignment="textEnd"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFC107"
+        app:layout_constraintLeft_toLeftOf="@id/image_poster_path"
+        app:layout_constraintTop_toBottomOf="@id/image_poster_path" />
+
+
+    <TextView
+        android:id="@+id/text_title_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/overview_title"
+        android:textAlignment="textEnd"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_genre"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/text_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="24dp"
+        android:text="@string/overview"
+        android:textAlignment="textStart"
+        android:textColor="#DCDCDC"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_resume"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

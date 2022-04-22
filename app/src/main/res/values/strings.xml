@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MovieDroid</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MOVIEDROID</string>
+    <string name="nav_header_subtitle">Upcoming Movies</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Upcoming</string>
+    <string name="menu_gallery">no action</string>
+    <string name="menu_slideshow">details</string>
+    <string name="titulo_do_filme">Titulo do Filme</string>
+    <string name="top_144_000">Top 144.000</string>
+    <string name="note_9_0">Note 9.0</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="movie_backdrop">Movie backdrop</string>
+    <string name="data_de_lancamento">data_de_lancamento</string>
+    <string name="overview_title">Sinópse</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Gênero</string>
+</resources>
