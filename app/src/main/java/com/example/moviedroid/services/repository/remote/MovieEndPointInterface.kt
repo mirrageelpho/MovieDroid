@@ -3,7 +3,6 @@ package com.example.moviedroid.services.repository.remote
 import com.example.moviedroid.services.model.GenreModelList
 import com.example.moviedroid.services.model.MovieListModel
 import com.example.moviedroid.services.model.MovieModel
-//import com.example.moviedroid.services.model.MovieModelResult
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
